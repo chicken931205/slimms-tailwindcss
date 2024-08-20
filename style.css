@@ -1,0 +1,155 @@
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 #ef674766
+    }
+
+    to {
+        box-shadow: 0 0 0 25px #ef674700
+    }
+}
+
+.mainContainer {
+    overflow: hidden;
+    position: relative;
+    z-index: 4
+}
+
+.mainContainer:before {
+    top: 0;
+    transform: translate(50%,-50%);
+    width: 385px
+}
+
+.mainContainer:after,.mainContainer:before {
+    aspect-ratio: 1;
+    background: #faf8f6;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    right: 0;
+    z-index: -1
+}
+
+.mainContainer:after {
+    bottom: 0;
+    transform: translateY(50%);
+    width: 45%;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.bg-\[\#F6F1EE\] {
+    --tw-bg-opacity: 1;
+    background-color: #f6f1ee;
+    background-color: rgb(246 241 238 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#20BF8D\] {
+    --tw-bg-opacity: 1;
+    background-color: #20bf8d;
+    background-color: rgb(32 191 141 / var(--tw-bg-opacity));
+}
+
+.text-\[\#5E677D\] {
+    --tw-text-opacity: 1;
+    color: #5e677d;
+    color: rgb(94 103 125 / var(--tw-text-opacity));
+}
+
+.min-w-\[24px\] {
+    min-width: 24px;
+}
+
+.h-\[24px\] {
+    height: 24px;
+}
+
+.font-\[500\] {
+    font-weight: 500;
+}
+
+.text-\[28px\] {
+    font-size: 28px;
+}
+
+.bg-\[\#1A0800\] {
+    --tw-bg-opacity: 1;
+    background-color: #1a0800;
+    background-color: rgb(26 8 0 / var(--tw-bg-opacity));
+}
+
+.h-\[1px\] {
+    height: 1px;
+}
+
+.h-\[2px\] {
+    height: 2px;
+}
+
+.h-\[4px\] {
+    height: 4px;
+}
+
+.h-\[6px\] {
+    height: 6px;
+}
+
+.h-\[8px\] {
+    height: 8px;
+}
+
+.text-\[\#BCBCBC\] {
+    --tw-text-opacity: 1;
+    color: #bcbcbc;
+    color: rgb(188 188 188 / var(--tw-text-opacity));
+}
+
+.h-\[66px\] {
+    height: 66px;
+}
+
+@media (min-width: 843px) {
+    .md\:h-\[76\.79px\] {
+        height: 76.79px;
+    }
+
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .md\:w-\[280px\] {
+        width: 280px;
+    }
+
+    .md\:text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    .md\:text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .md\:text-5xl {
+        font-size: 3rem;
+        line-height: 1;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1120px;
+    }
+}
